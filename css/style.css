@@ -1,6 +1,7 @@
 body{
     font-family: "Helvetica Neue", sans-serif !important; 
 }
+
 nav{
     background: linear-gradient(90deg, #FBBB91,  #F9568B);
     color: white !important;
@@ -8,9 +9,10 @@ nav{
 nav a{
     color: white;
 }
-nav li a{
+nav li a, nav li a:hover{
     color: rgba(255, 255, 255);
 }
+
 header{
     height: 100vh;
     padding: 200px 0px;
@@ -20,7 +22,62 @@ header{
 header h1 {
     font-weight: 300;
 }
+header button{
+    margin-top: 40vh;
+    margin-left: 25%;
+    padding: 8px 20px;
+    color: white;
+    background: linear-gradient(90deg, #FBBB91,  #F9568B);
+    border: none;
+    border-radius: 30px;
+
+}
 
 section{
     padding: 150px 0px;
+}
+
+#services-card-container{
+    list-style: none;
+}
+#services-card-container li{
+    text-align: center;
+}
+.service-card{
+    margin: 20px 10px;
+    padding: 30px 40px;
+    /*min-width: 300px;
+    min-height: 500px;*/
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.120) 1px 13px 30px;
+    color: #2F2F2F;
+}
+#services-card-container button{
+    cursor: pointer;
+    padding: 8px 70px;
+    border-radius: 20px;
+    background: none;
+}
+#services-card-container button:hover{
+    background: linear-gradient(90deg, #FBBB91,  #F9568B);
+    color: white;
+    border: white solid 1px;
+}
+#services-card-container button:focus{
+    outline: none;
+}
+#agile-card button{
+    color: #FFCA52;
+    border: #FFCA52 solid 1px;
+}
+#project-card button{
+    color: #F4AA54;
+    border: #F4AA54 solid 1px;
+}
+#innovation-card button{
+    color: #F56161;
+    border: #F56161 solid 1px;
+}
+#services-card-container h3{
+    font-size: 1.2rem;
 }
